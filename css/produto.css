@@ -197,3 +197,16 @@ tr:nth-child(2n) {
 td:first-child {
 		font-style:	italic;
 	}
+	
+/*Ajustando o Output da pagina produto*/
+.tamanhos output {
+		display: inline-block;
+		height: 23px;
+		width: 23px;
+		line-height: 23px;
+		text-align: center;
+		border: 3px	solid #666;
+		border-radius: 50%;
+		color: #555;
+	}
+

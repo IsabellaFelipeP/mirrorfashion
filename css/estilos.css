@@ -315,3 +315,13 @@ header h1 img	{
 	}
 
 }
+
+/*Função do painel para esconder mais que 6 produtos*/
+.painel li:nth-child(n+7) {
+display: none;
+}
+
+/*Função do painel do botão para mostrar mais*/
+.painel-aberto li:nth-child(n+7) {
+display: inline-block;
+}

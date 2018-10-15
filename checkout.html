@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/open-iconic-bootstrap.css">
 		<link rel="stylesheet" href="css/estilos.css">
+		<script	type="text/javascript" src="js/total.js"></script>
+		
 		</head>
 	
 	
@@ -24,33 +26,49 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<h2>Sua compra</h2>
-				
-					<!-- fim .card-header -->
-					
-					<div class="card-body">
-					<img src="img/produtos/foto1-verde.png" alt="Fuzzy	Cardigan"
-						 class="img-thumbnail mb-3">
-						
+					<div class="card mb-3">
+						<div class="card-header">
+							Sua	compra
+						</div><!-- fim.card-header -->
+						<div class="card-body">
+						<img src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail mb-3">
 						<dl>
-						<dt>Produto</dt>
-						<dd>Fuzzy	Cardigan</dd>
-						<dt>Cor</dt>
-						<dd>Verde</dd>
-						<dt>Tamanho</dt>
-						<dd>40</dd>
-						<dt>Preço</dt>
-						<dd>R$	129,90</dd>
+							<dt>Produto</dt>
+							<dd>Fuzzy Cardigan</dd>
+							<dt>Cor</dt>
+							<dd>Verde</dd>
+							<dt>Tamanho</dt>
+							<dd>40</dd>
+							<dt>Preço</dt>
+							<dd>R$ 129,90</dd>
 						</dl>
-						
-					</div><!--	fim	.card-body	-->
-				</div><!--	fim	.card	-->
-			
+						</div><!--	fim	.card-body	-->
+					</div><!--	fim	.card	mb-3	-->
+					
+					<div class="card mb-3">
+						<div class="card-body">
+							<div class="form-group">
+								<label for="qtd">Quantidade:</label>
+								<input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+							</div>
+						<div class="form-group">
+							<label for="total">Total:</label>
+							<output	id="total" class="form-control">R$ 129,90</output>
+						</div>
+						</div>
+					</div>
+						<dd	id="preco">R$ 129,90</dd>
+						<output	for="qtd preco" id="total" class="form-control">
+								R$ 129,90
+						</output
+
+				</div>
+				
 				<div class="col-md-4">
 					<div class="card-header">
-						<form class="col-md-8">
+						<form class="col-md-16">
 							<div class="row">
-								<fieldset class="col-lg-12">
+								<fieldset class="col-lg-20">
 
 									<legend>Dados pessoais</legend>
 										<div class="form-group">
@@ -83,7 +101,7 @@
 					<div class="col-md-4">
 						<div class="card mb-3">
 							<div class="row">
-								<fieldset class="col-lg-12">
+								<fieldset class="col-lg-10">
 
 									<legend>Cartão de crédito</legend>
 										<div class="form-group">
